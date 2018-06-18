@@ -1,5 +1,8 @@
 <?php
 
+echo 'Debut<br>';
+echo 'Connexion...<br>';
+
 $servername = "mysql://all-mysql:3306/";
 $username = "all";
 $password = "all2018";
