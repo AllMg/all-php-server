@@ -5,10 +5,11 @@ $database = "sampledb";
 $username = "user5WQ";
 $password = "BTbVj6OBK3vyWiIJ";
 
-echo 'Debut<br>';
-echo 'Connexion to...'.$servername.'<br>';
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
 
-$link = mysql_connect($servername, $username, $password)
-    or die("Impossible de se connecter : " . mysql_error());
-echo 'Connexion réussie';
-mysql_close($link);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
