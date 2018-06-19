@@ -1,11 +1,12 @@
 <?php
 
-echo 'Debut<br>';
-echo 'Connexion...<br>';
+$servername = "mysql://mysql:3306/";
+$database = "sampledb";
+$username = "userEJ1";
+$password = "gGn725E32DAFgTFC";
 
-$servername = "mysql://all-mysql:3306/";
-$username = "all";
-$password = "all2018";
+echo 'Debut<br>';
+echo 'Connexion to...'.$servername.'<br>';
 
 $link = mysql_connect($servername, $username, $password)
     or die("Impossible de se connecter : " . mysql_error());
