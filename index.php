@@ -2,8 +2,8 @@
 
 $servername = "mysql://mysql:3306/";
 $database = "sampledb";
-$username = "userEJ1";
-$password = "gGn725E32DAFgTFC";
+$username = "user5WQ";
+$password = "BTbVj6OBK3vyWiIJ";
 
 echo 'Debut<br>';
 echo 'Connexion to...'.$servername.'<br>';
